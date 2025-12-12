@@ -20,4 +20,7 @@ Running models (Goes through 4 attacks per model and using 25 batches)
 - **convnext.py/**
   - Run with python3 resnet.py > resnet.txt for robustness accuracy results
 
-Analysis - **plot.py/** - Creates plot of model architecture versus robustness accuracy for the 4 attacks (in legend)
+Analysis
+
+- **plot.py/**
+  - Creates plot of model architecture versus robustness accuracy for the 4 attacks (in legend)
