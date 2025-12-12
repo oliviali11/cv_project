@@ -14,11 +14,11 @@ Running models (Goes through 4 attacks per model and using 25 batches)
 - **resnet.py/**
   - Run with python3 resnet.py > resnet.txt for robustness accuracy results
 - **deit.py/**
-  - Run with python3 resnet.py > resnet.txt for robustness accuracy results
+  - Run with python3 deit.py > deit.txt for robustness accuracy results
 - **convit.py/**
-  - Run with python3 resnet.py > resnet.txt for robustness accuracy results
+  - Run with python3 convit.py > convit.txt for robustness accuracy results
 - **convnext.py/**
-  - Run with python3 resnet.py > resnet.txt for robustness accuracy results
+  - Run with python3 convnext.py > convnext.txt for robustness accuracy results
 
 Analysis
 
