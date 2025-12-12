@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# ε = 0.005
+# generate plot for model versus robust accuracy for four attack types
+# for ε = 0.005
 x = np.array([0,1,2,3])
 models = ['ConViT','ConvNeXT','DeiT','ResNet']
 apgd_ce = [0.39625, 0.225, 0.32625,0.1675 ]
@@ -25,10 +26,10 @@ plt.title('Model VS Robustness Accuracy Against Adversarial Attacks (ε = 0.005)
 plt.savefig('ε = 0.005.png', dpi=300, bbox_inches='tight')
 plt.show() 
 
-# ε = 0.031
-apgd_ce = [, , ,0.00375]
-apgd_t = [, ,, 0.0025]
-square = [, , , 0.2125]
+# for ε = 0.031
+apgd_ce = [0, 0, 0, 0.00375]
+apgd_t = [0, 0, 0, 0.0025]
+square = [0, 0, 0, 0.2125]
 plt.xticks(x, models)
 
 plt.plot(x, apgd_ce, label='APGD-CE')
@@ -39,9 +40,9 @@ plt.legend()
 
 plt.xlabel('Models')
 plt.ylabel('Robustness Accuracy')
-plt.title('Model VS Robustness Accuracy Against Adversarial Attacks (ε = 0.03)')
+plt.title('Model VS Robustness Accuracy Against Adversarial Attacks (ε = 0.031)')
 
 
-plt.savefig('ε = 0.03.png', dpi=300, bbox_inches='tight')
+plt.savefig('ε = 0.031.png', dpi=300, bbox_inches='tight')
 plt.show() 
 

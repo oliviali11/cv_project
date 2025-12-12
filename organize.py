@@ -1,4 +1,3 @@
-
 import os
 import shutil
 
@@ -7,8 +6,10 @@ GROUND_TRUTH_FILE = "/cs/cs153/projects/olivia-elsa/cv_final_project/ILSVRC2015_
 MAP_FILE = "/cs/cs153/projects/olivia-elsa/cv_final_project/map_clsloc.txt"
 OUTPUT_DIR = "/cs/cs153/projects/olivia-elsa/cv_final_project/ImageNet_final_val_sorted"
 
+# dictionary to store class index to wnid
 class_to_wnid = {}
 
+# extract mappings from map file and populate into dictionary
 with open(MAP_FILE, "r") as f:
     for line in f:
         wnid, class_id, _ = line.strip().split()
@@ -17,12 +18,14 @@ with open(MAP_FILE, "r") as f:
 
 gt_labels = []
 
+# obtain ground truth labels corresponding to validation images
 with open(GROUND_TRUTH_FILE, "r") as f:
     for line in f:
         gt_labels.append(int(line.strip()))
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+# save every image to corresponding wnid folder according to ground truth label
 for idx, class_id in enumerate(gt_labels, start=1):
 
     img_name = f"ILSVRC2012_val_{idx:08d}.JPEG"
@@ -33,12 +36,11 @@ for idx, class_id in enumerate(gt_labels, start=1):
 
     wnid = class_to_wnid[class_id]
 
+    # create wnid folder
     wnid_dir = os.path.join(OUTPUT_DIR, wnid)
     os.makedirs(wnid_dir, exist_ok=True)
 
+    # move image to wnid folder
     dst_path = os.path.join(wnid_dir, img_name)
     shutil.move(src_path, dst_path)
-
-    if idx % 5000 == 0:
-        print(f"Processed {idx} images")
-
+    
