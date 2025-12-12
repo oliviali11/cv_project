@@ -11,6 +11,8 @@ Preprocessing data
 
 Running models (Goes through 4 attacks per model and using 25 batches)
 
+- **requirements.txt/**
+  - Contains versions of all libraries imported in code
 - **resnet.py/**
   - Run with python3 resnet.py > resnet.txt for robustness accuracy results
 - **deit.py/**
@@ -23,4 +25,4 @@ Running models (Goes through 4 attacks per model and using 25 batches)
 Analysis
 
 - **plot.py/**
-  - Creates plot of model architecture versus robustness accuracy for the 4 attacks (in legend)
+  - Creates plots of model architecture versus robustness accuracy for the 4 attacks (in legend)
