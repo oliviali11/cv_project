@@ -7,5 +7,5 @@ This folder contains our final project for CS153 Computer Vision at Harvey Mudd 
 - **cv_final_project/** – Main source code for the project  
 	 - `/outputs` – Accuracy outputs of each model. Contains results from all four attacks
 	 - ``
-- **venv/** – Virtual Enviorment
+- **venvs/** – Virtual Environment
 
