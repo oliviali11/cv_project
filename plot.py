@@ -27,9 +27,9 @@ plt.savefig('ε = 0.005.png', dpi=300, bbox_inches='tight')
 plt.show() 
 
 # for ε = 0.031
-apgd_ce = [0, 0, 0, 0.00375]
-apgd_t = [0, 0, 0, 0.0025]
-square = [0, 0, 0, 0.2125]
+apgd_ce = [0.02625, 0.00125, 0.02,0.00375]
+apgd_t = [0.01125, 0.00375,0.01875, 0.0025]
+square = [0.2425, 0.23875, 0.31, 0.2125]
 plt.xticks(x, models)
 
 plt.plot(x, apgd_ce, label='APGD-CE')
