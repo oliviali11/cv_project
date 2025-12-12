@@ -4,13 +4,15 @@ This folder contains our final project for CS153 Computer Vision at Harvey Mudd 
 
 ### **Folder Structure and Contents**
 
-Preprocessing data - **organize.py/** - places all validation image data into corresponding WNID labeled folders based on ground truth class indices
+Preprocessing data
+
+- **organize.py/**
+  - places all validation image data into corresponding WNID labeled folders based on ground truth class indices
 
 Running models (Goes through 4 attacks per model and using 25 batches)
 
-    - **resnet.py/**
-
-- Run with python3 resnet.py > resnet.txt for robustness accuracy results
+- **resnet.py/**
+  - Run with python3 resnet.py > resnet.txt for robustness accuracy results
 - **deit.py/**
   - Run with python3 resnet.py > resnet.txt for robustness accuracy results
 - **convit.py/**
