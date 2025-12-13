@@ -14,7 +14,7 @@ device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
 # location of ImageNet dataset
-valdir = '/cs/cs153/projects/olivia-elsa/cv_final_project/ImageNet_final_val_sorted'
+valdir = '/cs/cs153/projects/olivia-elsa/cv_final_project/ImageNet'
 
 # create dataset using ImageFolder and perform data transforms on validation dataset
 dataset = datasets.ImageFolder(
